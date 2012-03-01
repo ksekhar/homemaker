@@ -2,6 +2,12 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'homemaker'
 
+puts "How many cups of Tea ?"
 cups = gets
 tea_maker = TeaMaker.new(cups.to_i)
 tea_maker.print_steps
+
+puts "How many cups of Chocolate Milk"
+cups = gets
+milk_mixer = MilkMixer.new(cups.to_i)
+milk_mixer.print_steps
